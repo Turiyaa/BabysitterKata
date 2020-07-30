@@ -14,6 +14,9 @@ public class PaymentTest {
 	private static final double DELTA = 0;
 	
 	@Test
+	
+	//I would recommend changing value here for calculating charge
+	
 	public void testCalculateCharge() throws BabySitterKataException {
 		payment = new Payment();
 		assertEquals(132, payment.calculateCharge("05:00 PM","08:00 PM", "04:00 AM"), DELTA);
