@@ -1,45 +1,37 @@
 package com.babysitterkata.entity;
 
-import java.time.LocalTime;
-
 public class Babysitter {
-	private LocalTime startTime;
-	private LocalTime bedTime;
-	private LocalTime endTime;
+	private int startHour;
+	private int bedTimeHour;
+	private int midnightHour;
 	private double charge;
 
-	Babysitter() {
+	public Babysitter() {
 
 	}
 
-	public Babysitter(LocalTime st, LocalTime bt, LocalTime et) {
-		this.startTime = st;
-		this.bedTime = bt;
-		this.endTime = et;
+	public int getStartHour() {
+		return startHour;
 	}
 
-	public LocalTime getStartTime() {
-		return startTime;
+	public void setStartHour(int startHour) {
+		this.startHour = startHour;
 	}
 
-	public void setStartTime(LocalTime startTime) {
-		this.startTime = startTime;
+	public int getBedTimeHour() {
+		return bedTimeHour;
 	}
 
-	public LocalTime getBedTime() {
-		return bedTime;
+	public void setBedTimeHour(int bedTimeHour) {
+		this.bedTimeHour = bedTimeHour;
 	}
 
-	public void setBedTime(LocalTime bedTime) {
-		this.bedTime = bedTime;
+	public int getMidnightHour() {
+		return midnightHour;
 	}
 
-	public LocalTime getEndTime() {
-		return endTime;
-	}
-
-	public void setEndTime(LocalTime endTime) {
-		this.endTime = endTime;
+	public void setMidnightHour(int midnightHour) {
+		this.midnightHour = midnightHour;
 	}
 
 	public double getCharge() {
