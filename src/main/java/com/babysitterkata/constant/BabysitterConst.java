@@ -2,7 +2,7 @@ package com.babysitterkata.constant;
 
 import java.time.LocalTime;
 
-public class BabysitterConst {
+public interface BabysitterConst {
 	double STARTTIME_PAY = 12;
 	double BEDTIME_PAY = 8;
 	double MIDNIGHT_PAY = 16;
