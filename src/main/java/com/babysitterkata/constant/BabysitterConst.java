@@ -8,5 +8,6 @@ public interface BabysitterConst {
 	double MIDNIGHT_PAY = 16;
 	LocalTime START_TIME = LocalTime.parse("17:00");
 	LocalTime END_TIME = LocalTime.parse("04:00");
+	int SECONDS_TO_HOURS = 3600;
 
 }

@@ -3,17 +3,27 @@ package com.babysitterkata.entity;
 import java.time.LocalTime;
 
 public class Babysitter {
-	private static LocalTime startTime;
+	private LocalTime startTime;
 	private LocalTime bedTime;
 	private LocalTime endTime;
 	private double charge;
 
-	public static LocalTime getStartTime() {
+	Babysitter() {
+
+	}
+
+	public Babysitter(LocalTime st, LocalTime bt, LocalTime et) {
+		this.startTime = st;
+		this.bedTime = bt;
+		this.endTime = et;
+	}
+
+	public LocalTime getStartTime() {
 		return startTime;
 	}
 
-	public static void setStartTime(LocalTime startTime) {
-		Babysitter.startTime = startTime;
+	public void setStartTime(LocalTime startTime) {
+		this.startTime = startTime;
 	}
 
 	public LocalTime getBedTime() {

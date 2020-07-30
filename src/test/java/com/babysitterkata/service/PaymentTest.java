@@ -1,14 +1,18 @@
 package com.babysitterkata.service;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
+
+import com.babysitterkata.exception.BabySitterKataException;
 
 public class PaymentTest {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
+	Payment payment;
+	
+	@Test(expected = BabySitterKataException.class)
+	public void testValidation() throws BabySitterKataException {
+		payment = new Payment();
+		
+		payment.calculateCharge("17:00", "18:00", "04:00");
 	}
 
 }
